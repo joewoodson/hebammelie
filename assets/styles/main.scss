@@ -1,0 +1,51 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+
+// Topbar and Nav
+.banner {
+  margin-bottom: 45px;
+  background: #FDFDFD;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid darken(#FDFDFD, 5);
+}
+
+.brand {
+  color: grey;
+}
+
+.brand img {
+  margin-top: 5px;
+  width: 6em;
+  float: left;
+}
+
+.nav-primary {
+  float: right;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color: grey;
+  }
+}
