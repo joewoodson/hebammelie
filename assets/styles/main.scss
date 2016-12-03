@@ -19,13 +19,18 @@
 @import "layouts/tinymce";
 
 
+// Universal
+a:hover {
+  text-decoration: none;
+}
+
 // Topbar and Nav
 .banner {
   margin-bottom: 45px;
   background: #FDFDFD;
   height: 60px;
   line-height: 60px;
-  border-bottom: 2px solid darken(#FDFDFD, 5);
+  border-bottom: $light-border;
 }
 
 .brand {
@@ -40,12 +45,26 @@
 
 .nav-primary {
   float: right;
+  font-size: 0;
 
   li {
-    display: inline;
+    height: 60px;
+    display: inline-block;
+    // padding: 0 15px;
+    border-left: $light-border;
+    &:last-of-type {
+      border-right: $light-border;
+    }
+    &:hover {
+      background: darken(#FDFDFD, 6);
+    }
   }
 
   a {
     color: grey;
+    font-size: 16px;
+    height: 60px;
+    padding: 0 15px;
+    display: inline-block;
   }
 }
