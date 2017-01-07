@@ -1,10 +1,16 @@
+// Fonts
+$handwritten: 'Amatic SC', Helvetica;
+$body-font: 'Raleway', sans-serif;
+
 // Grid settings
 $enable-flex:           true;
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #A7B5C0;
+$primary: #A7B5C0;
+$primary-highlight: lighten($primary, 5);
+$primary-shadow: darken($primary, 8);
 
-// Accents
-$light-border: 1px solid darken(#FDFDFD, 5)
+// Utilities
+$light-border: 1px solid $primary-highlight;

@@ -19,7 +19,11 @@
 @import "layouts/tinymce";
 
 
-// Universal
+// General
+h1,h2,h3,h4,h5,h6,p,li,a,span {
+  font-family: $body-font;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -27,19 +31,26 @@ a:hover {
 // Topbar and Nav
 .banner {
   margin-bottom: 45px;
-  background: #FDFDFD;
-  height: 60px;
-  line-height: 60px;
+  background: $primary;
+  height: 62px;
+  line-height: 62px;
   border-bottom: $light-border;
 }
 
 .brand {
-  color: grey;
+  color: #fff;
+  font-family: $handwritten;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &:hover, &:active {
+    color: #fff;
+  }
 }
 
 .brand img {
   margin-top: 5px;
-  width: 6em;
+  width: 90px;
   float: left;
 }
 
@@ -47,24 +58,40 @@ a:hover {
   float: right;
   font-size: 0;
 
-  li {
-    height: 60px;
+  li:before, li:last-child:after {
+    content: "";
     display: inline-block;
-    // padding: 0 15px;
+    height: 100%;
+    background: $primary-shadow;
+    width: 1px;
+  }
+
+  li:last-child:after {
+    background: $primary-highlight;
+  }
+
+  li {
+    height: 62px;
+    display: inline-block;
+    font-weight: 500;
     border-left: $light-border;
     &:last-of-type {
-      border-right: $light-border;
+      border-right: 1px solid $primary-shadow;
     }
     &:hover {
       background: darken(#FDFDFD, 6);
     }
+    &:hover a {
+      color: grey;
+    }
   }
 
   a {
-    color: grey;
+    color: #fff;
     font-size: 16px;
     height: 60px;
     padding: 0 15px;
+    vertical-align: top;
     display: inline-block;
   }
 }
