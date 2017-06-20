@@ -20,6 +20,11 @@
 
 
 // General
+.wrap.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 h1,h2,h3,h4,h5,h6,p,li,a,span {
   font-family: $body-font;
 }
@@ -30,7 +35,7 @@ a:hover {
 
 // Topbar and Nav
 .banner {
-  margin-bottom: 45px;
+  margin-bottom: 6em;
   background: $primary;
   height: 62px;
   line-height: 62px;
@@ -94,4 +99,43 @@ a:hover {
     vertical-align: top;
     display: inline-block;
   }
+}
+
+// Intro Section
+img.headshot {
+  max-width: 80%;
+}
+
+// Services Section
+section.services {
+  margin-top: 6em;
+  background: slategrey;
+  height: 150px;
+
+  .container {
+    height: 100%;
+    // display: flex;
+    // justify-content: center;
+  }
+
+  .row {
+    height: 100%;
+  }
+}
+
+// Flex Alignment
+.df {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+// Utility Classes
+.text-center {
+  text-align: center;
 }
