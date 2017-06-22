@@ -11,7 +11,7 @@
         <?php get_template_part('templates/content', 'page'); ?>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive img-thumbnail headshot" src="<?php echo get_template_directory_uri(); ?>/dist/images/headshot-min.jpg" alt="">
+        <img class="img-responsive img-thumbnail headshot" src="<?php echo get_template_directory_uri(); ?>/dist/images/headshot-min.jpg" alt="amelie headshot">
       </div>
     </div>
   </section>

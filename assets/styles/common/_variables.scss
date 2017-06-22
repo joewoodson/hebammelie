@@ -1,6 +1,7 @@
 // Fonts
 $handwritten: 'Amatic SC', Helvetica;
-$body-font: 'Raleway', sans-serif;
+$heading-font: 'Raleway', sans-serif;
+$body-font: 'Roboto', sans-serif;
 
 // Grid settings
 $enable-flex:           true;
@@ -14,3 +15,4 @@ $primary-shadow: darken($primary, 8);
 
 // Utilities
 $light-border: 1px solid $primary-highlight;
+$dark-border: 1px solid $primary-shadow;

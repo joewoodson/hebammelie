@@ -25,12 +25,20 @@
   padding-right: 0;
 }
 
+.container-fluid, .main {
+  overflow-x: hidden;
+}
+
 h1,h2,h3,h4,h5,h6,p,li,a,span {
-  font-family: $body-font;
+  font-family: $heading-font;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+p {
+  font-family: $body-font;
 }
 
 // Topbar and Nav
@@ -108,19 +116,42 @@ img.headshot {
 
 // Services Section
 section.services {
+  border-top: $dark-border;
+  border-bottom: $dark-border;
+  border-width: 2px;
   margin-top: 6em;
-  background: slategrey;
-  height: 150px;
+  padding: 2em 0;
+  background: $primary;
+  color: #fff;
 
   .container {
     height: 100%;
-    // display: flex;
-    // justify-content: center;
   }
 
   .row {
     height: 100%;
   }
+
+}
+
+.service {
+  padding: 0 35px;
+  text-align: center;
+
+  img {
+    max-width: 45px;
+    margin-bottom: 8px;
+  }
+
+  h5 {
+    // text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    // font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
 }
 
 // Flex Alignment
@@ -128,6 +159,10 @@ section.services {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .center-center {
