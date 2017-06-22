@@ -16,4 +16,5 @@
     </div>
   </section>
   <?php get_template_part('templates/services'); ?>
+  <?php get_template_part('templates/news'); ?>
 <?php endwhile; ?>
