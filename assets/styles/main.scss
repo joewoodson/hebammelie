@@ -170,12 +170,36 @@ section.testimonials {
 .testimonial-slide {
   background-size: cover;
 
-  &:before {
+  &:first-child::before {
     content: '';
     display: block;
     background: rgba(0,0,0,.4);
+    left: 0;
+    right: 0;
+    position: absolute;
     height: 100%;
   }
+
+}
+
+.testimonial {
+  z-index: 10;
+
+  h3, span {
+    color: #fff;
+    font-size: 38px;
+    display: inline-block;
+  }
+
+  .attribution {
+    color: #fff;
+
+    &::before {
+      content: '- ';
+    }
+
+  }
+
 }
 
 .testimonial-1 {
@@ -213,9 +237,9 @@ section.news {
 
 // Flex Alignment
 .df {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
+  display: -webkit-flex !important;
+  display: -ms-flex !important;
+  display: flex !important;
 }
 
 .flex-col {
@@ -230,4 +254,10 @@ section.news {
 // Utility Classes
 .text-center {
   text-align: center;
+}
+
+.quotation-mark {
+  padding: 0 8px;
+  font-family: initial;
+  font-weight: bold;
 }
