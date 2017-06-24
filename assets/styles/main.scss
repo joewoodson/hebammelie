@@ -3,6 +3,7 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 @import "common/global";
@@ -35,6 +36,10 @@ h1,h2,h3,h4,h5,h6 {
 
 h1,h2,h3,h4,h5,h6,p,li,a,span {
   color: $dark-text;
+}
+
+h3, h4 {
+  margin-bottom: .75em;
 }
 
 a:hover {
@@ -151,6 +156,54 @@ section.services {
     font-size: 14px;
   }
 
+}
+
+// Testimonials Section
+section.testimonials {
+  margin-top: 6em;
+}
+
+.slick-track {
+  height: 30em;
+}
+
+.testimonial-slide {
+  background-size: cover;
+
+  &:before {
+    content: '';
+    display: block;
+    background: rgba(0,0,0,.4);
+    height: 100%;
+  }
+}
+
+.testimonial-1 {
+  background-image: url('../images/baby-finger.jpeg');
+  background-position-y:  -220px;
+}
+
+.testimonial-2 {
+  background-image: url('../images/holding-baby.jpeg');
+}
+
+.testimonial-3 {
+  background-image: url('../images/baby-feet.jpg');
+}
+
+.slick-arrow.slick-prev:before, .slick-arrow.slick-next:before {
+  color: $primary-highlight;
+  font-family: 'FontAwesome';
+  font-size: 45px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 25px;
 }
 
 // News Section
