@@ -16,6 +16,6 @@
     </div>
   </section>
   <?php get_template_part('templates/services'); ?>
-  <?php get_template_part('templates/news'); ?>
+  <?php get_template_part('templates/articles'); ?>
   <?php get_template_part('templates/testimonials'); ?>
 <?php endwhile; ?>

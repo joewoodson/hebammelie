@@ -1,4 +1,4 @@
-<section class="news">
+<section class="articles">
   <div class="container">
     <h4 class="text-center">Interesting Hebamme Stories</h4>
     <div class="row">
