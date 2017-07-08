@@ -236,9 +236,43 @@ section.testimonials {
   right: 25px;
 }
 
-// News Section
+// Articles Section
 section.articles {
   margin-top: 6em;
+}
+
+.article {
+  margin: 15px 0;
+  padding: 8px 0;
+  border-bottom: 1px dotted $primary;
+
+  img {
+    max-width: 100%;
+  }
+  h6 {
+    font-weight: bold;
+    line-height: 21px;
+    color: darken($primary, 15);
+  }
+  a:hover {
+    cursor: pointer;
+    h6 {
+      color: $primary;
+    }
+  }
+  a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+  }
+  aside {
+    color: darkgrey;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+
 }
 
 // Footer

@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "localhost/hebammelie"
+    "devUrl": "localhost:8888/hebammelie"
   }
 }

@@ -16,6 +16,15 @@
     </div>
   </section>
   <?php get_template_part('templates/services'); ?>
-  <?php get_template_part('templates/articles'); ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <?php get_template_part('templates/articles'); ?>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </div>
   <?php get_template_part('templates/testimonials'); ?>
 <?php endwhile; ?>
