@@ -18,11 +18,11 @@
   <?php get_template_part('templates/services'); ?>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <?php get_template_part('templates/articles'); ?>
+      <div class="col-md-4 contact-container">
+        <?php get_template_part('templates/contact'); ?>
       </div>
       <div class="col-md-6">
-
+        <?php get_template_part('templates/articles'); ?>
       </div>
     </div>
   </div>

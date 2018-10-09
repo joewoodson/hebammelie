@@ -30,6 +30,10 @@
   overflow-x: hidden;
 }
 
+section.articles, section.contact, section.services, section.testimonials {
+  margin-top: 6em;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: $heading-font;
 }
@@ -129,7 +133,6 @@ section.services {
   border-top: $light-border;
   border-bottom: $light-border;
   border-width: 4px;
-  margin-top: 6em;
   padding: 2em 0;
   background: darken($primary, 25);;
 
@@ -164,10 +167,6 @@ section.services {
 }
 
 // Testimonials Section
-section.testimonials {
-  margin-top: 6em;
-}
-
 .slick-track {
   height: 30em;
 }
@@ -237,10 +236,6 @@ section.testimonials {
 }
 
 // Articles Section
-section.articles {
-  margin-top: 6em;
-}
-
 .article {
   margin: 15px 0;
   padding: 8px 0;
@@ -257,7 +252,7 @@ section.articles {
   a:hover {
     cursor: pointer;
     h6 {
-      color: $primary;
+      color: #014c8c;
     }
   }
   a:hover, a:active, a:visited, a:focus {
@@ -273,6 +268,26 @@ section.articles {
     color: #666;
   }
 
+}
+
+// Contact Section
+.contact-container {
+  margin-right: 15%;
+}
+
+section.contact {
+  padding: 15px;
+  border: 3px solid $primary-shadow;
+  border-radius: 4px;
+  background: lighten($primary, 25);
+}
+
+.contact-form label {
+  text-align: left !important;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
 }
 
 // Footer

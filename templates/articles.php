@@ -44,31 +44,31 @@ function substrwords($text, $maxchar, $end='...') {
 ?>
 
 <section class="articles">
-  <div class="container">
-    <h4 class="text-center">Interesting Hebamme Stories</h4>
-    <div class="row">
-    <?php
-      // loop through articles, fetch og tag content, and render
-      if( $articles ):
-         foreach( $articles as $post ) :
-           setup_postdata($post);
-           $article_url = get_field( "article_url" );
-           $ogtags = get_og_data($article_url); ?>
+  <h4 class="text-center">Interesting Hebamme Stories</h4>
+  <div class="row">
+  <?php
+    // loop through articles, fetch og tag content, and render
+    if( $articles ):
+       foreach( $articles as $post ) :
+         setup_postdata($post);
+         $article_url = get_field( "article_url" );
+         $ogtags = get_og_data($article_url); ?>
 
-           <div class="article row df">
-             <div class="col-md-5">
-               <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><img class="img-responsive" src="<?php echo $ogtags['og:image']; ?>" alt="article image"></a>
-              </div>
-              <div class="col-md-7">
-                <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><h6><?php echo $ogtags['og:title']; ?></h6></a>
-                <aside><?php if ($ogtags['og:site_name']) echo 'von '.$ogtags['og:site_name']; ?></aside>
-                <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><p><?php echo substrwords($ogtags['og:description'], 110); ?></p></a>
-              </div>
-           </div>
+         <?php if ($ogtags) { ?>
+         <div class="article row df">
+           <div class="col-md-5">
+             <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><img class="img-responsive" src="<?php echo $ogtags['og:image']; ?>" alt="article image"></a>
+            </div>
+            <div class="col-md-7">
+              <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><h6><?php echo $ogtags['og:title']; ?></h6></a>
+              <aside><?php if ($ogtags['og:site_name']) echo 'von '.$ogtags['og:site_name']; ?></aside>
+              <a href="<?php echo $ogtags['og:url']; ?>" target="_blank"><p><?php echo substrwords($ogtags['og:description'], 110); ?></p></a>
+            </div>
+         </div>
+       <?php } ?>
 
-         <?php endforeach;
-         wp_reset_postdata();
-       endif; ?>
-     </div>
-  </div>
+       <?php endforeach;
+       wp_reset_postdata();
+     endif; ?>
+   </div>
 </section>
